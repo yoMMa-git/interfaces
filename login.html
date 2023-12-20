@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход на сайт</title>
+    <style>
+        body {
+            background-color: #332F29; /* тёмный цвет фона */
+            color: #F3E0D2; /* светлый цвет текста */
+            padding-top: 50px; /* Для компенсации высоты кнопки */
+            text-align: center; /* Чтобы разместить кнопку по центру */
+            user-select: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #593F39; /* цвет фона формы */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #E17B24; /* цвет кнопки */
+            color: #F3E0D2;
+            cursor: pointer;
+        }
+
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #E17B24;
+            text-decoration: none;
+        }
+
+        .dashboard-link {
+            color: #E17B24;
+            text-decoration: none;
+        }
+        .registration-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #E17B24;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: #E17B24;">Вход на сайт</h2>
+
+<a href="./registration.html" class="registration-link">Регистрация</a>
+
+<form action="/login" method="post">
+  <div>
+    <input type="text" id="username" name="username" placeholder="Имя пользователя">
+  </div>
+  <div>
+    <input type="password" id="password" name="password" placeholder="Пароль">
+  </div>
+  <button type="submit">Войти</button>
+</form>
+
+</body>
+</html>

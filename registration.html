@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <style>
+        body {
+            background-color: #332F29; /* тёмный цвет фона */
+            color: #F3E0D2; /* светлый цвет текста */
+            text-align: center; /* Выравнивание содержимого по центру */
+            padding-top: 50px;
+        }
+
+        form {
+            max-width: 300px; /* Устанавливаем максимальную ширину формы */
+            margin: 0 auto; /* Центрируем форму */
+            background-color: #593F39;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="code"],
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%; /* Ширина всех полей равна 100% */
+            box-sizing: border-box; /* Учитываем отступы и толщину границы в общей ширине */
+        }
+
+        button {
+            background-color: #E17B24; /* цвет кнопки */
+            color: #F3E0D2;
+            cursor: pointer;
+        }
+
+        .login-link {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: #E17B24;
+          text-decoration: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<h2>Регистрация</h2>
+
+<a href="./login.html" class="login-link">Вход на сайт</a>
+
+<form action="/submit_registration" method="post">
+  <div>
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password">
+  </div>
+  <div>
+    <label for="code">Текстовый код (оставьте пустым, если нет):</label>
+    <input type="text" id="code" name="code">
+  </div>
+  <button type="submit" href="./dashboard.html">Зарегистрироваться</button>
+</form>
+
+</body>
+</html>

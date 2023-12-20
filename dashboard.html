@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .split {
+            display: flex;
+            height: 100vh;
+        }
+        .left-panel {
+            align-items: center;
+            width: 20%; /* Изменили ширину левой панели на 20% */
+            background-color: #332F29;
+            color: #F3E0D2;
+            padding: 20px;
+            border-right: 2px solid #E17B24;
+        }
+        .right-panel {
+            width: 80%; /* Изменили ширину правой панели на 80% */
+            padding: 20px;
+            background-color: #332F29;
+            color: #F3E0D2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            background-color: #E17B24;
+            color: #F3E0D2;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #974F13;
+        }
+    </style>
+</head>
+<body>
+    <div class="split">
+        <div class="left-panel">
+            <h2>Список групп</h2>
+            <!-- Здесь может быть ваш список групп -->
+        </div>
+        <div class="right-panel">
+            <div class="buttons">
+                <button>Добавление студента</button>
+                <button>Отчисление студента</button>
+                <button>Поиск студента</button>
+                <button>Добавление группы</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
